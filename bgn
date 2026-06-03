@@ -1,0 +1,337 @@
+```
+<nav class="sticky top-0 z-50 bg-bg-warm/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <span class="text-xl font-bold text-accent-red tracking-tight">Investigasi BGN</span>
+            </div>
+            <div class="flex items-center space-x-4 overflow-x-auto hide-scroll">
+                <a href="#ringkasan" class="nav-link text-sm font-medium text-text-main py-2 whitespace-nowrap">Ringkasan</a>
+                <a href="#linimasa" class="nav-link text-sm font-medium text-text-main py-2 whitespace-nowrap">Linimasa</a>
+                <a href="#barang-bukti" class="nav-link text-sm font-medium text-text-main py-2 whitespace-nowrap">Barang Bukti</a>
+                <a href="#analisis-data" class="nav-link text-sm font-medium text-text-main py-2 whitespace-nowrap">Analisis Proyek</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+
+    <header class="text-center py-12 border-b border-gray-200">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-text-main mb-4 leading-tight">Laporan Penindakan:<br><span class="text-accent-red">Penggeledahan Kantor BGN</span></h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Mulai penelitian dan tahap investigasi terkait dugaan penyimpangan dana operasional dan proyek pengadaan tahun anggaran 2025-2026.</p>
+    </header>
+
+    <section id="ringkasan" class="scroll-mt-24">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-text-main border-l-4 border-accent-gold pl-3">Ringkasan Eksekutif</h2>
+        </div>
+        <div class="bg-panel-bg rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Bagian ini menyajikan gambaran umum dari operasi penindakan yang telah dilaksanakan. Halaman ini dirancang untuk memberikan pemahaman langsung mengenai konteks, tujuan, dan hasil awal dari operasi penggeledahan di Kantor Badan Gizi Nasional (BGN) kepada pemangku kepentingan.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-bg-warm p-5 rounded-lg border border-gray-200">
+                    <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Status Investigasi</div>
+                    <div class="text-xl font-bold text-accent-red">Penyidikan Aktif</div>
+                    <p class="text-sm text-gray-600 mt-2">Peningkatan status dari penyelidikan ke penyidikan pada awal Juni 2026.</p>
+                </div>
+                <div class="bg-bg-warm p-5 rounded-lg border border-gray-200">
+                    <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Lokasi Utama</div>
+                    <div class="text-xl font-bold text-text-main">Gedung Pusat BGN</div>
+                    <p class="text-sm text-gray-600 mt-2">Lantai 3 (Divisi Pengadaan) dan Lantai 5 (Ruang Arsip Keuangan).</p>
+                </div>
+                <div class="bg-bg-warm p-5 rounded-lg border border-gray-200">
+                    <div class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Fokus Perkara</div>
+                    <div class="text-xl font-bold text-text-main">3 Proyek Pengadaan</div>
+                    <p class="text-sm text-gray-600 mt-2">Dugaan *markup* anggaran dan pelaporan fiktif pada distribusi logistik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="linimasa" class="scroll-mt-24">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-text-main border-l-4 border-accent-gold pl-3">Linimasa Investigasi</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            Rangkaian peristiwa berikut merinci tahapan sejak laporan awal diterima hingga pelaksanaan penggeledahan fisik. Silakan klik pada setiap tanggal di sebelah kiri untuk melihat detail tindakan yang dilakukan oleh tim penyidik pada hari tersebut.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="w-full md:w-1/3 flex flex-col space-y-2" id="timeline-container">
+            </div>
+            
+            <div class="w-full md:w-2/3">
+                <div class="bg-panel-bg rounded-xl shadow-md p-6 md:p-8 h-full min-h-[250px] border border-gray-100 flex flex-col justify-center" id="timeline-detail-panel">
+                    <div class="text-center text-gray-400">
+                        <span class="text-4xl block mb-2">&#8592;</span>
+                        <p>Pilih tanggal pada linimasa untuk melihat detail kejadian.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="barang-bukti" class="scroll-mt-24">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-text-main border-l-4 border-accent-gold pl-3">Rekapitulasi Barang Bukti</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            Bagian ini memvisualisasikan proporsi jenis barang bukti yang berhasil diamankan dari lokasi penggeledahan. Data ini penting untuk mengidentifikasi arah analisis forensik selanjutnya, apakah lebih bertumpu pada dokumen cetak atau jejak digital. Interaksi kursor pada grafik akan memunculkan jumlah spesifik.
+        </p>
+
+        <div class="bg-panel-bg rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="chart-container">
+                        <canvas id="evidenceChart"></canvas>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-bold text-text-main mb-4">Rincian Penyitaan</h3>
+                    
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border-l-4 border-accent-red">
+                        <div>
+                            <div class="font-semibold text-gray-800">Dokumen Fisik</div>
+                            <div class="text-sm text-gray-500">Kontrak, Faktur, Laporan Keuangan</div>
+                        </div>
+                        <div class="text-2xl font-bold text-text-main">145<span class="text-sm text-gray-500 font-normal ml-1">bundel</span></div>
+                    </div>
+
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border-l-4 border-[#2c3e50]">
+                        <div>
+                            <div class="font-semibold text-gray-800">Perangkat Elektronik</div>
+                            <div class="text-sm text-gray-500">Laptop, PC Desktop, Server Mini</div>
+                        </div>
+                        <div class="text-2xl font-bold text-text-main">12<span class="text-sm text-gray-500 font-normal ml-1">unit</span></div>
+                    </div>
+
+                    <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg border-l-4 border-[#D6BC9E]">
+                        <div>
+                            <div class="font-semibold text-gray-800">Media Penyimpanan</div>
+                            <div class="text-sm text-gray-500">Flashdisk, Eksternal HDD</div>
+                        </div>
+                        <div class="text-2xl font-bold text-text-main">28<span class="text-sm text-gray-500 font-normal ml-1">unit</span></div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-red-50 text-accent-red rounded-lg text-sm">
+                        <span class="font-bold">Catatan Penindakan:</span> Selain barang di atas, tim penyidik juga mengamankan uang tunai senilai Rp 450.000.000 yang ditemukan di dalam brankas ruangan Kepala Divisi Pengadaan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analisis-data" class="scroll-mt-24 mb-24">
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-text-main border-l-4 border-accent-gold pl-3">Analisis Temuan Proyek</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            Berdasarkan pemeriksaan dokumen awal, terdapat tiga proyek utama yang menjadi fokus indikasi penyimpangan. Grafik di bawah ini membandingkan Anggaran yang dialokasikan, Realisasi yang dilaporkan, serta Nilai Indikasi Fiktif (kerugian sementara) yang ditemukan oleh tim auditor independen.
+        </p>
+
+        <div class="bg-panel-bg rounded-xl shadow-sm p-6 md:p-8 border border-gray-100">
+            <div class="chart-container" style="max-width: 100%;">
+                <canvas id="projectChart"></canvas>
+            </div>
+            <div class="mt-8 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                <strong>Kesimpulan Sementara:</strong> Proyek "Distribusi Logistik C" menunjukkan selisih indikasi fiktif tertinggi yang mencapai hampir 50% dari total nilai anggaran proyek. Fokus pemeriksaan forensik digital saat ini diprioritaskan pada alur komunikasi pengadaan untuk Proyek C.
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-text-main text-white py-8 border-t-4 border-accent-red">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-400">
+        <p>&copy; 2026 Sistem Pelaporan Investigasi Internal.</p>
+        <p class="mt-2">Dokumen ini bersifat rahasia (Confidential). Distribusi hanya untuk internal tim penyidik dan otoritas terkait.</p>
+    </div>
+</footer>
+
+<script>
+    const timelineData = [
+        {
+            date: "12 Mei 2026",
+            title: "Penerimaan Laporan Masyarakat",
+            description: "Satgas internal menerima laporan anonim disertai bukti awal berupa salinan digital buku kas kecil yang menunjukkan aliran dana tidak wajar kepada vendor logistik fiktif.",
+            status: "Penerimaan"
+        },
+        {
+            date: "20 Mei 2026",
+            title: "Mulai Penelitian & Penyelidikan",
+            description: "Tim intelijen melakukan validasi silang (cross-check) terhadap data laporan dengan database pengadaan LKPP. Ditemukan anomali pemenang tender berturut-turut pada 3 proyek besar.",
+            status: "Penyelidikan"
+        },
+        {
+            date: "28 Mei 2026",
+            title: "Penerbitan Surat Perintah",
+            description: "Berdasarkan hasil gelar perkara internal, diterbitkan Surat Perintah Penyidikan (Sprindik) dan Surat Perintah Penggeledahan untuk mengamankan bukti fisik yang berpotensi dihilangkan.",
+            status: "Administrasi Hukum"
+        },
+        {
+            date: "02 Jun 2026",
+            title: "Pelaksanaan Penggeledahan",
+            description: "Penggeledahan serentak dilakukan pada pukul 09:00 WIB di Gedung Pusat BGN. Tim mengisolasi area Lantai 3 dan 5. Sebanyak 5 orang saksi dari pihak internal BGN diperiksa di tempat.",
+            status: "Penindakan Aktif"
+        }
+    ];
+
+    function renderTimeline() {
+        const container = document.getElementById('timeline-container');
+        const panel = document.getElementById('timeline-detail-panel');
+        
+        timelineData.forEach((item, index) => {
+            const div = document.createElement('div');
+            div.className = `timeline-item p-4 rounded-r-lg bg-white border border-gray-100 shadow-sm ${index === 0 ? 'active' : ''}`;
+            div.innerHTML = `
+                <div class="font-bold text-accent-red text-lg">${item.date}</div>
+                <div class="text-sm font-medium text-gray-800 mt-1">${item.title}</div>
+            `;
+            
+            div.addEventListener('click', () => {
+                document.querySelectorAll('.timeline-item').forEach(el => el.classList.remove('active'));
+                div.classList.add('active');
+                updateDetailPanel(item);
+            });
+            
+            container.appendChild(div);
+        });
+
+        if (timelineData.length > 0) {
+            updateDetailPanel(timelineData[0]);
+        }
+    }
+
+    function updateDetailPanel(data) {
+        const panel = document.getElementById('timeline-detail-panel');
+        panel.innerHTML = `
+            <div class="animate-[fadeIn_0.3s_ease-in-out]">
+                <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-full mb-4">${data.status}</span>
+                <h3 class="text-2xl font-bold text-text-main mb-2">${data.title}</h3>
+                <div class="text-accent-red font-medium mb-4">${data.date}</div>
+                <p class="text-gray-700 leading-relaxed">${data.description}</p>
+            </div>
+        `;
+    }
+
+    function initCharts() {
+        const evidenceCtx = document.getElementById('evidenceChart').getContext('2d');
+        new Chart(evidenceCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Dokumen Fisik', 'Perangkat Elektronik', 'Media Penyimpanan'],
+                datasets: [{
+                    data: [145, 12, 28],
+                    backgroundColor: [
+                        '#9B2C2C', 
+                        '#2c3e50', 
+                        '#D6BC9E'  
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { padding: 20, font: { family: 'Inter' } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return ' ' + context.label + ': ' + context.raw + ' unit/bundel';
+                            }
+                        }
+                    }
+                },
+                cutout: '65%'
+            }
+        });
+
+        const projectCtx = document.getElementById('projectChart').getContext('2d');
+        new Chart(projectCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Pengadaan A (Logistik)', 'Pengadaan B (Fasilitas)', 'Pengadaan C (Distribusi)'],
+                datasets: [
+                    {
+                        label: 'Nilai Anggaran (Miliar Rp)',
+                        data: [5.0, 3.0, 7.0],
+                        backgroundColor: '#D6BC9E',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Realisasi Laporan (Miliar Rp)',
+                        data: [4.8, 2.9, 6.5],
+                        backgroundColor: '#2c3e50',
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Indikasi Fiktif (Miliar Rp)',
+                        data: [2.0, 1.5, 3.2],
+                        backgroundColor: '#9B2C2C',
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { font: { family: 'Inter' } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': Rp ' + context.raw + ' Miliar';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#f0f0f0'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return 'Rp ' + value + ' M';
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        renderTimeline();
+        initCharts();
+        
+        tailwind.config.theme.extend.keyframes = {
+            fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+        };
+    });
+</script>
+
+```
